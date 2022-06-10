@@ -18,7 +18,10 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Test
-        run: mvn --batch-mode test
+        env:
+          USERNAME: ${{ secrets.USER_NAME }}
+          TOKEN: ${{ secrets.TOKEN_GITHUB }}
+        run: mvn --batch-mode test --settings settings.xml
 
 
   publish-artifact:

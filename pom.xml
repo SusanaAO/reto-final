@@ -9,7 +9,7 @@
 		<version>2.3.12.RELEASE</version> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nttdata.som</groupId>
-	<artifactId>service</artifactId>
+	<artifactId>service-order</artifactId>
 	<version>1.0.6</version>
 	<name>service-order</name>
 	<description>Service Order Management</description>

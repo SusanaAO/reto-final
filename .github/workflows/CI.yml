@@ -23,7 +23,6 @@ jobs:
           TOKEN: ${{ secrets.TOKEN_GITHUB }}
         run: mvn --batch-mode test --settings settings.xml
 
-
   publish-artifact:
     runs-on: ubuntu-latest
     needs: [unit-test]

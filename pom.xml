@@ -99,7 +99,7 @@
 
 		<dependency>
 			<groupId>com.nttdata</groupId>
-			<artifactId>commons</artifactId>
+			<artifactId>lireria</artifactId>
 			<version>1.0.6</version>
 		</dependency>
 

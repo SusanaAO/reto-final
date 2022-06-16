@@ -51,5 +51,5 @@ jobs:
           login-server: acrsemilleroreto.azurecr.io # default: index.docker.io
           username: acrsemilleroreto
           password: ${{ secrets.PASSWORD_REGISTRY }}
-      - run: docker builddocker build . -t acrsemilleroreto.azurecr.io/micro_susana:${{ github.sha }}
+      - run: docker build . -t acrsemilleroreto.azurecr.io/micro_susana:${{ github.sha }}
       - run: docker push acrsemilleroreto.azurecr.io/micro_susana:${{ github.sha }}
